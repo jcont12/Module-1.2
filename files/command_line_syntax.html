@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <html>
+    <header>
+      <link href="css/command_line_syntax.css" type:"text/css" rel="stylesheet">
+      <title>Command Line Syntax: Your Web Journal</title>
+    </header>
+    <body>
+       <div class="Title">
+         <h1 id="cmdlsyntax"> <span class="cmdl"> Command Line </span> SYNTAX </h1>
+       </div>
+       <h2 id="cmdltitle"> GIT</h2>
+	     <div class="opening">
+         <p>The command line is a text interface for the computer's operating system which allows us to move through our files just like the finder does.
+              To access the command line, we use the terminal.</p>
+
+	       <p>A filesystem organizes a computer's files and directories into a tree structure, always starting with the root directory.
+              Each parent directory can contain more child directories and files. Remember directory=folder</p>
+
+	       <p> Another helpful term to know while in the command line is "environment". The environment refers to the preferences and settings of the current user.The nano editor is a command line text editor used to configure the environment. The standard environment settings are stored in <strong> ~/.bash_profile</strong>, which you can edit with nano.<br />
+	             Finally, environment variables are variables that can be used across commands and programs and hold information about the environment.</p><br />
+
+         <p> If you want the complete list of command line commands from codeacademy, <a href="https://www.codecademy.com/articles/command-line-commands"> click here.</a></p>
+       </div>
+       <div class="syntax">
+         <span class="code">pwd -</span> (print working directory) outputs the name of the current working directory.<br />
+	       <span class="code">ls -</span> (list) lists all files and directories in the working directory.<br />
+	       <span class="code">cd  -</span> (change directory) switches you into the directory you specify. If you want to go back, you must type cd .. and if you need to go back further type cd ../.. <br />
+	       <span class="code">mkdir -</span> (make directory) creates a new directory in the working directory.<br />
+	       <span class="code">touch -</span> creates a new file inside the working directory<br />
+	       <span class="code">cat -</span> outputs content of a file into the directory<br />
+	       <span class="code">wc -</span> (word count) outputs the number of lines, words and characters of a file<br />
+ 	       <span class="code">sort - </span>sorts lines of text alphabetically.<br />
+	       <span class="code">uniq- </span>filters duplicate, adjacent lines of text. <br />
+	       <span class="code">grep -</span> (global regular expression print) searches for a text pattern and outputs it, but is case sensitive. If you dont want it to be case sensitive, add -i. if you add -R it will find searched text in files. If you add -Rl, it will find files that have said text<br />
+	       <span class="code">sed 's/"find"/"replace' - </span> (stream editor) searches for a text pattern, modifies it, and outputs it. it must always begin with 's' substitute, followed by the text to find and followed by what to replace it with...it will only be replaced the first time it is found in a line, so if you want all instances to be replaced end it with /g for globally (ex: sed 's/dolomita/marmol/g' master)<br />
+ 	       <span class="code">clear - </span>clears all written code in terminal and goes to space 1<br />
+
+         <p>There are also options that modify commands that modify the behaviour of commands, such as:</p>
+           <ul>
+             <li><span class="code"> -a (ex:ls -a) :</span> (all contents) lists all contents of a directory, including hidden files and directories</li>
+             <li><span class="code"> -l :</span> (long format) lists all contents in long format</li>
+             <li><span class="code"> -t :</span> (time format) orders files and directories by the time they were last modified</li>
+             <li><span class="code">-alt :</span> all options used together.</li>
+           </ul>
+
+	       <span class="code"> > - </span>redirects standard output of a command to a file, overwriting previous content.<br />
+	       <span class="code"> >> - </span>redirects standard output of a command to a file, appending new content to old content.<br />
+	       <span class="code"> < - </span>redirects standard input to a command. <br />
+	       <span class="code"> | - </span> (is a pipe) redirects standard output of the command to the left and pipes it as standard input to the command to the right<br />
+
+	       <p> It is also important to learn about <strong>nano </strong> which is the command line text editor. Think of nano as your "word" for the command line. In nano you can create a new file, edit the text inside it and save it.</p>
+
+  	     <span class="code"> nano "filename".txt - </span> Creates a new file, and you can start adding text to it.<br />
+	       <span class="code"> nano ~/.bash_profile - </span> Opens the file used to store environment settings<br />
+	       <span class="code"> source ~/.bash_profile - </span> activates the changes in ~/.bash_profile for the current session. Instead of closing the terminal and needing to start a new session, source makes the changes available right away in the session we are in.<br />
+
+         <p> Once inside nano, use the following commands and keyboard shortcuts: </p>
+
+         <span class="code">export VARIABLE="value" - </span> sets and exports an environment variable... it helps for you to set shortcuts to variables<br />
+	       <span class="code">USER - </span>The name of the current user<br />
+	       <span class="code">PS1 - </span> the command prompt (standard $ is changed to another symbol)<br />
+         <span class="code">HOME - </span> Home directory, usually not customized (standard $)<br />
+         <span class="code">PATH - </span> returns a colon separated list of file paths. It is customized in advanced cases.<br />
+	       <span class="code">env - </span> Returns a list of environment variables <br />
+	       <span class="code"> alias- </span> createa a keyboard shortcut for commands...for example: alias p= "pwd"<br />
+	       <span class="code"> Ctrl + O - </span> saves a file. 'O' stands for output. Remember to press enter to save<br />
+	       <span class="code"> Ctrl + X - </span> exits the file<br />
+	       <span class="code"> Ctrl + G - </span> Opens a help menu<br />
+
+    </body>
+  </html>

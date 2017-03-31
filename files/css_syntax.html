@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+  <html>
+    <header>
+      <link href="css/css_syntax.css" type:"text/css" rel="stylesheet">
+      <title>CSS Syntax: Your Web Journal</title>
+    </header>
+    <body>
+       <div class="Title">
+         <h1 id="csssyntax"> <span class="css">CSS </span> SYNTAX </h1>
+        </div>
+    <h2 id="cascadingstylesheets"> Cascading Style Sheets</h2>
+	<div class="opening">
+          <p>CSS is a programming language for styling. It has different syntax and stylewriting than HTML and can be saved as a file in order to add to a HTML
+	     as a link to style its contents. (it could also be added directly into HTML by making it a tag: (p style="color:red;font-size:15px">). CSS works by writing a selector (elemnt, class, etc) opening and closing brackets {} and a CSS declaration that includes what
+	     you want to change, a colon, what to change it to and a semicolon to close: (P {color:blue;}). </p> <br />
+
+          <p>The best way to work with CSS is by using id's and classes in your HTML file, that way you can be very specific about what elements or group of elements you want to style. To style an id, the selector must begin with the symbol "#" followed by the id name. To style a class, the selector must begin with the dot symbol "." followed by the class you want to style. </p> <br />
+
+	  <p> It is important to take into account as a good programmer that since many old browsers may not read updated programming languages (CSS3 for example), you
+	      should add "failsafes" that are read by all browsers... so for example you can add a basic color element followed by a new hue color element. The browser will
+	      first read the latter and if it can't read it will go to the one above to try and read it </p>
+
+	</div>
+      <div class="syntax">
+
+          <span class="code">/* "" */ -</span> is used for writing comments<br />
+	  <span class="code">color:""; -</span> you can add color with a name (e.g. red...<a href="http://www.colors.commutercreative.com/grid/" target=_blank>147 colors</a> ) or rgb(#,#,#)(red green blue) or #ffffff or HSL(#,#,#)(hue saturation lightness).. you can add a (alpha value 0-1) in rgb and hsl <br />
+	  <span class="code">background-color:""; -</span> Color for all or specified background <br />
+	  <span class="code">font-family:""; -</span> if you want to be a good programmer and make sure it looks well in all browsers, add comma common font and finally comma serif or sans-serif so the computer can try and read one, if not next if not next<br />
+	  <span class="code">font-size:""; -</span> size in pixels(px), ems (em) or %<br />
+	  <span class="code">line-height:""; -</span> spaces in between lines of paragraphs, ems preffered<br />
+	  <span class="code"> word-spacing:""; -</span> space between words<br />
+	  <span class="code">letter-spacing:""; -</span> Go on sherlock, try and guess<br />
+	  <span class="code">font-weight:""; -</span> Bold or normal<br />
+	  <span class="code">font-style:""; -</span> italic or normal<br />
+	  <span class="code">text-transform:""; -</span> uppercase or lowercase<br />
+	  <span class="code">text-align:""; -</span> left, center or right<br />
+  	  <span class="code">background-image:url(""); -</span> This is how you add a background image to any element<br />
+	  <span class="code">background-repeat:""; -</span> Repeating the image when its size is small (repeat (vert & horiz), repeat-x (horiz), repeat-y (vert),no-repeat)<br />
+	  <span class="code">background-position:""; -</span> When the image does not repeat, let it know where it will be (9 grid...left top, center top, right top,left center,center center, right bottom)<br />
+	  <span class="code">background:""; -</span> Set a background image, and this command helps you not use the three following (example- background:url("") no-repeat center left;)<br />
+	  <span class="code">background-size:""; -</span> modify its size (cover: cover full container, can become distorted - contain: as large as possible but letterboxed)<br />
+	  <span class="code">background-attachment:"": -</span> whether or not the background image should move when scrolling or not.<br />
+
+<p> Another important tool to know in CSS is Pseudo-Style selectors. A pseudo-class selector is a way of accessing HTML items that aren't part of the document (a link will be in HTML, but how about a link that has been clicked? or that the mouse is hovering over?). Pseudo Class selectors syntax is: <id="pseudo"> selecto:pseudo-class_selector {...}.</p>
+<p> Some examples include:</p>
+ 	 <span class="code">selector:link - </span> CSS style for an unvisited link.<br />
+	 <span class="code">selector:visited - </span> CSS style for an visited link.<br />
+	 <span class="code">selector:hover - </span> CSS style for when mouse hovers link<br />
+	 <span class="code">selector:first-child - </span> Selects only first option to change style<br />
+	 <span class="code">selector:nth-child(#) - </span> Selects the # child of the number you select to style<br />
+        </p>
+	<div class="boxes">
+	<h3 id="boxestitle"> BOXES </h3>
+
+	  <span class="code">border:""; -</span> border of elements... you can put size, line style and color so you dont use the ones below (to show borders use border: 1px solid rgba(0, 0, 0, 0.3)<br />
+	  <span class="code">border-style:""; -</span> only change the type of border (solid,dashed,dotted,double,groove,inset,outset,ridge,hidden,none)<br />
+	  <span class="code"> border-width:""; -</span> only change border width (you can use px or Thin, medium or thick) You can change each border (1px 2px 1px 2px (clockwise beginning from top)<br />
+	  <span class="code">border-color:""; -</span> Change border color<br />
+	  <span class="code">border-radius:""; -</span> To change from square to circle borders (px or %... 100% perfect circle)<br />
+	  <span class="code">height:""; -</span> border height in px, ems or %<br />
+	  <span class="code">width:""; -</span> border width in px, ems or %<br />
+	  <span class="code">min or max-width:""; -</span> Also helpful to limit box sizes especially when web page size is modified<br />
+	  <span class="code">min or max-height:""; -</span> Also helpful to limit box sizes especially when web page size is modified<br />
+	  <span class="code">overflow:""; -</span> Scroll or hide (what happens when box measurements are to small for element<br />
+	  <span class="code">padding:""; -</span> space between content and box (px) (also clockwise for each border)<br />
+	  <span class="code">margin:""; -</span> space directly outside of the box (px), so no other elements can be exactly together. If you use auto as size, the element will center but there must be a width to center to. Since every browser has its own default stylesheet, it is common practice to reset to default box margin in padding with the following command at the beginning of the CSS file*{margin:0;padding:0}<br />
+	  <span class="code">display:""; -</span> change behaviour of elements to: in-line (behave like normal text), block (behave like blocks, separate), inline-block (behave like text but within a block, think word image tight margin), none (dissapears,The rest of the web page will act as if the element does not exist)<br />
+	  <span class="code">visibility:""; -</span> hidden,none or visible. Hides elements (such as donate button) from webpage but its still in the code...hidden space for element remains in webpage, none doesnt.<br />
+	  <span class="code">box-sizing:border-box; -</span> Try using this at the beginning of CSS files for all elemnts in order for padding dimensions and margin dimensions to be separated from box<br />
+	  <span class="code">position:""; -</span> Position of an element (static(default), relative, absolute, fixed).<br />
+	    <div class="positionlist">
+	    <ol>
+		<li> Relative: relative to its default position (example- top:50px; right:10px;	)</li><br />
+		<li> Absolute: Ignores all other elements... can also add position(example- top:50px; right:10px;)</li><br />
+		<li> Fixed: fixes element to a place even if you scroll...recomended to add barckground color</li><br />
+	    </ol>
+ 	    </div>
+	  <span class="code">z-index:""; -</span> numbered sort list... what goes in front and what goes in the back (integers 1-100)<br />
+	  <span class="code">float:""; -</span> left or right...move anything all the way left or right<br />
+	  <span class="code">clear:""; -</span> Instructs if the box element should'nt be allowed to touch another element or if it could (left,right,both,none)<br />
+	</div>
+       </div>
+
+
+
+</ul>
+</body>
+</html>

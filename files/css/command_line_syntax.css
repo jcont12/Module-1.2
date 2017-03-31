@@ -1,0 +1,105 @@
+* {
+font-family:leelawadee;
+box-sizing:border-box;
+word-spacing:0.06em;
+margin:0;
+padding:0;
+
+
+}
+
+.Title {
+
+background-color:darkseagreen;
+color:white;
+height:100%;
+width:80px;
+max-width:80px;
+position:fixed;
+top:0px;
+Left:0px;
+clear:right;
+
+}
+
+.git{
+
+color:gainsboro;
+
+}
+
+#cmdlsyntax {
+
+width:30px;
+font-size:30px;
+word-wrap:break-word;
+text-align:center;
+padding-top:200px;
+padding-left:30px;
+
+}
+
+#gittitle{
+
+position:relative;
+left:200px;
+
+}
+
+.opening {
+
+
+text-align:left;
+line-height:1.2em;
+padding: 20px 0px 40px 50px;
+width:90%;
+position:relative;
+left:50px;
+
+}
+
+.syntax {
+
+line-height:2em;
+padding-left:50px;
+padding-right:50px;
+width:95%;
+position:relative;
+left:50px;
+text-align:left;
+display:block;
+
+}
+
+.code {
+
+color:darkblue;
+
+}
+
+#boxestitle {
+
+color:Darkgray;
+
+}
+
+.boxes {
+
+border-color:darkgray;
+padding:15px;
+border-style:solid;
+width:100%
+text-align:left;
+position:relative;
+right:15px;
+margin:10px
+
+}
+
+.positionlist {
+
+text-align:left;
+line-height:0.5em;
+padding:20px;
+
+}

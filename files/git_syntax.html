@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <html>
+    <header>
+      <link href="css/git_syntax.css" type:"text/css" rel="stylesheet">
+      <title>GIT Syntax: Your Web Journal</title>
+    </header>
+    <body>
+       <div class="Title">
+         <h1 id="gitsyntax"> <span class="css">GIT </span> SYNTAX </h1>
+        </div>
+    <h2 id="git"> GIT</h2>
+	<div class="opening">
+          <p>GIT is a software used to track every single change that is made in your work, whatever it may be! So you dont have to deal with the usual problem of a program closing and
+	     not having saved anything. It also helps to make a "new path" on your work that you can try out, if you like it then merge it to your original work or if you don't simply dismiss it!
+             A Git project can be thought of as having three parts:</p>
+	    <ol>
+	      <li>A Working Directory: where you'll be doing all the work: creating, editing, deleting and organizing files</li>
+	      <li>A Staging Area: where you'll list changes you make to the working directory</li>
+	      <li>A Repository: where Git permanently stores those changes as different versions of the project</li>
+	    </ol>
+	</div>
+      <div class="syntax">
+
+    <span class="code">git init -</span>(intialize) Creates a new Git repository<br />
+	  <span class="code">git status -</span>  Inspects the contents of the working directory and staging area<br />
+	  <span class="code">git add filename -</span> In order for Git to begin tracking changes, we must add files from the working directory to the staging area. You can use this command once with various files by adding each filename to add to staging area separated by a space. If you want to add all files, use symbol ".". <br />
+	  <span class="code">git diff filename -</span> Shows the differences that have been made in a file that is being tracked (differences between the working directory and the staging area)<br />
+	  <span class="code">git commit -m"" -</span> Permanently stores file changes (from the staging area in the repository).<br />
+    <span class="code">git log -</span> Shows a list of all previous commits <br />
+    <span class="code">git show HEAD -</span>In Git, the commit you are currently on is known as the HEAD commit. In many cases, the most recently made commit is the HEAD commit. Enter command to see the HEAD commit <br />
+	  <span class="code">git checkout HEAD filename -</span> Restore the file in your working directory to look exactly as it did when you last made a commit.<br />
+	  <span class="code">git reset HEAD filename -</span> Unstages file changes in the staging area.<br />
+	  <span class="code">git reset SHA# -</span> Can be used to reset to a previous commit in your commit history, the one which first 7 SHA digits you put.<br />
+	  <span class="code">git branch -</span> Lists all a Git project's branches.<br />
+	  <span class="code">git branch branch_name -</span> Creates a new branch.<br />
+	  <span class="code">git checkout branch_name-</span> Used to switch from one branch to another.<br />
+  	<span class="code">git merge branch_name-</span>  Used to join file changes from one branch to another.<br />
+	  <span class="code">git branch -d branch_name -</span> Deletes the branch specified.<br />
+	  <span class="code">git clone -</span> Creates a local copy of a remote.<br />
+	  <span class="code">git remote-v -</span>Lists a Git project's remotes.<br />
+	  <span class="code">git fetch -</span> Fetches work from the remote into the local copy.<br />
+	  <span class="code">git merge origin/master -</span> Merges origin/master into your local branch.<br />
+	  <span class="code">git push origin <branch_name> -</span> Pushes a local branch to the origin remote.<br />
+
+
+
+</ul>
+</body>
+</html>
