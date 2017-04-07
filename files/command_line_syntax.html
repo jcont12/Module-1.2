@@ -10,22 +10,32 @@
        </div>
        <h2 id="cmdltitle"> GIT</h2>
 	     <div class="opening">
-         <p>The command line is a text interface for the computer's operating system which allows us to move through our files just like the finder does.
-              To access the command line, we use the terminal.</p>
-
-	       <p>A filesystem organizes a computer's files and directories into a tree structure, always starting with the root directory.
-              Each parent directory can contain more child directories and files. Remember directory=folder</p>
-
-	       <p> Another helpful term to know while in the command line is "environment". The environment refers to the preferences and settings of the current user.The nano editor is a command line text editor used to configure the environment. The standard environment settings are stored in <strong> ~/.bash_profile</strong>, which you can edit with nano.<br />
-	             Finally, environment variables are variables that can be used across commands and programs and hold information about the environment.</p><br />
-
-         <p> If you want the complete list of command line commands from codeacademy, <a href="https://www.codecademy.com/articles/command-line-commands"> click here.</a></p>
+         <p>The command line is a text interface for the computer's operating system which allows us to move through our files just
+            like the finder does (folder navigator on your computer, this is called GUI).To access the command line, we can use
+            the computer terminal or we can download tools (such as Git-bash.).
+            <br />
+            Although it might seem more complicated to use than a standard GUI (computer folder navigator), as you learn more
+            commands you realize the command line has so much more capabilities and options and you soon find it is very practical.
+            A very important tip to remember is that a <strong> directory </strong> is exactly the same as a folder (directory=folder).
+            <br />
+            Another helpful term to know while in the command line is "environment". The environment refers to the preferences and
+            settings of the current user.The nano editor is a command line text editor used to configure the environment.
+            The standard environment settings are stored in <strong> ~/.bash_profile</strong>, which you can edit with nano.<br />
+	          Finally, environment variables are variables that can be used across commands and programs and hold information about
+            the environment
+            <br />
+            If you want the complete list of command line commands from codeacademy,
+            <a href="https://www.codecademy.com/articles/command-line-commands"> click here.</a>
+          </p>
        </div>
        <div class="syntax">
          <span class="code">pwd -</span> (print working directory) outputs the name of the current working directory.<br />
 	       <span class="code">ls -</span> (list) lists all files and directories in the working directory.<br />
-	       <span class="code">cd  -</span> (change directory) switches you into the directory you specify. If you want to go back, you must type cd .. and if you need to go back further type cd ../.. <br />
+	       <span class="code">cd  -</span> (change directory) switches you into the directory you specify. If you want to go back
+         one folder, you must type ".." like this--> cd .. and if you need to go back further type cd ../.. <br />
 	       <span class="code">mkdir -</span> (make directory) creates a new directory in the working directory.<br />
+         <span class="code">rmdir -</span> (remove directory) deletes specified directory... tip: check options -r and -f and apply
+         to command if appropriate. <br />
 	       <span class="code">touch -</span> creates a new file inside the working directory<br />
 	       <span class="code">cat -</span> outputs content of a file into the directory<br />
 	       <span class="code">wc -</span> (word count) outputs the number of lines, words and characters of a file<br />
